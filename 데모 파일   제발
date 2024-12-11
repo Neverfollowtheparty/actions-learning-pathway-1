@@ -1,0 +1,13 @@
+name : hellow - world
+
+on push
+
+jobs : 
+hellow - world -job : 
+
+runs - on : ububtu - latest
+
+steps
+- name : check out repository code
+uses : actions / checkout@v3
+- run echo "$(cat hellow_world.txt)"
